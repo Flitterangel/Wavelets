@@ -1,0 +1,16 @@
+#On Matlab Command Menu
+wavemenu
+load('noisdopp.mat')
+ x=noisdopp(1,1:1000);
+x
+save('shortnoisdopp.mat','x');
+
+
+x=zeros(1,500)
+ for i=35:80 
+x(i)=200;end
+for i= 81:125
+x(i)=-80;end
+x
+save('shortnois.mat','x');
+x
