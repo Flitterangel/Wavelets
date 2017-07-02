@@ -1,0 +1,19 @@
+% N=1024;
+
+% Fs=1000;
+
+w = 0:0.01:12*pi;
+
+haar = ((4*(sin(w/4)).^2))./((sqrt(2*pi)).*abs(w));
+
+% Y = fft(haar);
+
+plot(w,haar),title('FT of Haar')
+
+hold on
+
+plot(4.6622*[1 1],[0 0.29],'r')
+
+gtext('w0')
+
+hold off
